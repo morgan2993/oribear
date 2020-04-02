@@ -1,0 +1,45 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+.main-header {
+    text-align: center;
+    background-color: #f2e8f0;
+    width: 100%;
+    
+}
+
+figure {
+    margin: auto;
+}
+
+.main-header img {
+    width: 35%;     
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.bear1, .bear2, .bear3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #f2e8f0;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #f2e8f0;
+    height: 5rem;
+}
