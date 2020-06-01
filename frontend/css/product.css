@@ -1,0 +1,247 @@
+body {
+    margin: auto;
+    width: 100%;
+    background-color: grey;
+    font-family: Roboto;
+}
+
+.main-header {
+    background-color: #f2e8f0;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.main-header figure {
+    margin: auto;
+}
+
+.main-header img {
+    width: 35%;     
+}
+
+.dropdownmenu {
+    margin: auto;
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: grey;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+    background: #000000;
+}
+
+.backToList {
+    margin: 2rem;
+    
+}
+
+
+.fa-arrow-circle-left {    
+    margin-right: 10px;
+    
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    border-color: #f2e8f0;
+    width: 80%;
+    background-color: #f2e8f0;
+    margin: auto;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.product img {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 3px grey;
+     
+}
+
+.product button {
+    
+    
+    margin-bottom: 2rem;
+}
+
+.image {
+    margin: 1rem!important;
+    
+}
+
+figure {
+    margin: auto;
+}
+
+.main-header img {
+    width: 35%;     
+}
+
+.section-header {
+    text-align: center;
+}
+
+
+footer {
+    background-color: #7e7e7e;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+/* page produit */
+
+.container {
+    border: solid 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #f2e8f0 ;
+    border-radius: 20px;
+}
+
+.productModif {
+    margin-left: 33rem;
+    margin-bottom: 1rem;
+}
+
+.productInfo {
+    line-height: 3rem;
+}
+
+.checkout {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quantityDiv {
+    text-align: center;
+}
+
+.fa-shopping-cart {
+    margin-right: 10px;
+}
+
+.swal-modal {
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+
+
+
+.btn-add, .backToList button {
+    width: 14em;
+    background: grey;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    box-shadow:1px 1px 3px #999;
+    transition: all .25s ease;
+}
+
+.btn-add:hover, .backToList button:hover {
+    background-color: black;
+}
+
+.quantity-input, #options {
+    width: 66%;
+    font-size: 15px;
+    margin-left: auto;
+    width: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2e8f0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}  
+
+.mentions, .contact {
+    margin: 1rem;
+}
+
+@media (min-width: 100px) and (max-width: 1390px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .productOptions {
+        text-align: center;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 504px) {
+    .product img {
+        width: 200px;
+        height: auto;
+    }
+
+    figure {
+        text-align: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1048px) {
+    .product img {
+        width: 350px;
+        height: auto;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+}
