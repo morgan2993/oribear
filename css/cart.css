@@ -121,6 +121,7 @@ h1 {
 .doubleButton {
     display: flex;
     align-self: center;
+    margin-bottom: 5rem;
 }
 .productImg img {
     width: 90px;
@@ -226,6 +227,9 @@ li {
 
 #checkoutTitle {
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
 }
 
 .productColor, .productQuantity {
