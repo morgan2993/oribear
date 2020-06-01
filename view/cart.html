@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Oribear, site d'achat et de personalisation d'oursons en peluche">
+        <link rel="stylesheet" href="../css/cart.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/43d8b34d85.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <title>Panier - Oriteddy - Finalisez votre commande !</title>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <figure>
+                <a href="../index.html">
+                    <img src="../img/logo_final.jpg">
+                </a>
+            </figure>
+            <nav class="dropdownmenu">
+                <ul>
+                  <li>
+                      <a href="../index.html">Acceuil</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="container">
+            <div class="hiddenOnForm">
+                <h2 id="checkoutTitle"></h2>
+                <section id="productContainer"></section>
+                <section id="finalPrice">
+                    <h2>Prix total du panier :</h2>
+                    <h2 id="finalCheckout"></h2>
+                    <div class="doubleButton" id="addBtn">
+                        <section id="viderPanier">
+                            <button
+                                type="button";
+                                id="emptyCart";
+                                onclick="";>
+                                <i class="fas fa-trash"></i>
+                                Vider le panier 
+                            </button>  
+                        </section>
+                        <section class="checkout" id="confirmPanier">
+                            <button 
+                                type="button";
+                                id="confirmCart";
+                                onclick="";
+                                class="btn-Confirm";>
+                                <i class="fas fa-check-circle"></i>
+                                Confirmer le panier
+                            </button>   
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <section id="form">
+                <div id="onclick--form">
+                    <form class="form-container" id="postData">
+                        <label for="firstName"><strong>Prénom</strong></label>
+                        <input type="text" name="firstName" placeholder="Votre prénom..." id="firstName" maxlength="20" required>
+
+                        <label for="lastName"><strong>Nom</strong></label>
+                        <input type="text" name="lastName" placeholder="Votre nom..." id="lastName" maxlength="30" required>
+
+                        <label for="address"><strong>Adresse</strong></label>
+                        <input type="text" name="address" placeholder="Votre adresse..." id="address" maxlength="60" required>
+
+                        <label for="city"><strong>Ville</strong></label>
+                        <input type="text" name="city" placeholder="Votre ville..." id="city" maxlength="35" required>
+
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" placeholder="exemple123@test.com" id="email" required>
+
+                        <div class="buttons">
+                            <button type="button" id="validate" onclick=""><i class="fas fa-check"></i> Valider</button>
+                            <button type="button" class="closeForm" id="close" onclick=""><i class="fas fa-times"></i> Fermer</button>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="main-footer">
+            <div class="mentions">Mentions légales</div>
+            <div class="contact">Contact</div>   
+        </footer> 
+     
+        <script type='text/javascript' src="../model/Cart.js" ></script>
+        <script type="text/javascript" src="../model/Order.js"></script>
+        <script type='text/javascript' src="../repository/OrderRepository.js"></script>
+        <script type='text/javascript' src="../repository/CartRepository.js"></script>
+        <script type='text/javascript' src="../viewmodel/CartView.js" ></script>
+        <window class="onload"></window>
+    </body>
+</html>

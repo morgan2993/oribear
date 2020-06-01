@@ -1,0 +1,133 @@
+body {
+    margin: auto;
+    width: 100%;
+    background-color: grey;
+    font-family: Roboto;
+}
+
+.main-header {
+    background-color: #f2e8f0;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#confirmationInfo {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: #f2e8f0;
+    border-radius: 10px;
+}
+
+.orderInfos {
+    padding: 5em;
+}
+
+.main-header figure {
+    margin: auto;
+}
+
+.main-header img {
+    width: 35%;     
+}
+
+.dropdownmenu {
+    margin: auto;
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: grey;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+    background: #000000;
+}
+
+h1 {
+    text-align: center;
+}
+
+#product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+      margin: 25px;
+   
+
+}
+
+.product {
+    display: flex;
+    background-color: #f2e8f0;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    width: 386px;
+    height: 256px;
+    border: 3px solid;
+    border-color: #f2e8f0;
+}
+
+.productInfo {
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.product button {
+    
+    
+    margin-bottom: 2rem;
+}
+
+.image {
+    margin: 1rem!important;
+}
+
+figure {
+    margin: auto;
+}
+
+ footer {
+        background-color: #f2e8f0;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+ }  
+
+.mentions, .contact {
+    margin: 1rem;
+}
