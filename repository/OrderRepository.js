@@ -24,6 +24,23 @@ class OrderRepository {
       
     }
 
+
+    saveOrder(contact, totalCost) {
+       const request = this.order(contact);
+       fetch(request)
+        .then(response => response.json()) // récupération de l'Order ID
+            .then( (response) => {
+                let getOrderId = response.orderId;  
+                
+                localStorage.clear();  
+                let orderRecap = { getOrderId, totalCost, contact };  
+                
+                localStorage.setItem("orderIsConfirmed", JSON.stringify(orderRecap));
+                
+            })
+    
+    }
+
     getOrderId() { // Méthode permettant de récupérer la valeur de orderIsConfirmed (ID et montant de la commande)
     
     const checkoutItems = JSON.parse(localStorage.getItem('orderIsConfirmed')) || []; 

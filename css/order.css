@@ -27,6 +27,12 @@ body {
 
 .orderInfos {
     padding: 5em;
+    line-height: 4rem;
+}
+
+.orderInfos img {
+    width: 400px;
+    height: auto;
 }
 
 .main-header figure {
@@ -130,4 +136,24 @@ figure {
 
 .mentions, .contact {
     margin: 1rem;
+}
+
+@media (min-width : 100px) and (max-width : 620px) {
+    .orderInfos {
+        padding: 2rem;
+    }
+    
+    
+    .orderInfos img {
+        width: 100px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2, h3 {
+        font-size: 16px;
+    }
 }

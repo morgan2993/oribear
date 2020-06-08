@@ -22,8 +22,6 @@ class CartRepository {
         if (localStorage.getItem('productCart') === null) { 
         
             cart.push(cartItem);       
-      
-           this.saveCart(cart);
 
         } else {    
 
@@ -67,7 +65,8 @@ class CartRepository {
           if ((cart[i].product._id == id) && (cart[i].color == color)) {
               cart[i].quantity--;
               this.saveCart(cart);
-              location.reload();
+              
+              //location.reload();
           } else {
               continue;
             }
@@ -75,9 +74,13 @@ class CartRepository {
             if (cart[i].quantity === 0) {  // Suppression du produit si quantité = 0
                 cart.splice(i, 1);
                 this.saveCart(cart);
-                location.reload;
+                location.reload();
+                
             }
+            debugger;
         }
+        return cart;
+        
     }
            
        
@@ -91,7 +94,8 @@ class CartRepository {
             cart[i].quantity++;
                     
             this.saveCart(cart);
-            location.reload();
+            return cart;
+            //location.reload();
             } else {
                 continue;
             }
@@ -113,11 +117,13 @@ class CartRepository {
             dangerMode: true,
         })
             .then((result) => {
+                if(result != null) {
                 if (result.false) {     
                     swal('Panier vidé', '', 'success')
                 } else {   
                     localStorage.clear();
                     location.reload(); // Trouver autre solution que de recharger la page
+                }
                 }
             })
     }
