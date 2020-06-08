@@ -228,7 +228,7 @@
             let id = button.dataset.id;
             let color = button.dataset.color;
             let cart = cartRepository.removeItem(id, color);
-            console.log(cart);
+          
             for(let i = 0; i < cart.length; i++) {
               if (cart[i].product._id == id && cart[i].color == color) {
                

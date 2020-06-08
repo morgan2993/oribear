@@ -77,7 +77,7 @@ class CartRepository {
                 location.reload();
                 
             }
-            debugger;
+            
         }
         return cart;
         
